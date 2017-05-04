@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> <!--Sets Character Encoding Standard To HTML5 Default-->
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!--Bootstrap CDN (CSS)-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!--My CSS-->
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script> <!--jQuery-->
+</head>
+
+<body>
+<!-- Header and instructions -->
+<div class="jumbotron container-fluid">
+	<h1>Crystals Collector!</h1>
+	<p id="instructions"> You will be given a random number at the start of the game. <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. <br> You win the game by matching your total score to the random number. <br> The value of each crystal is hidden from you until you click on it. <br> Each time when the game starts, the game will change the values of each crystal. </p>
+</div>
+
+<!-- Computer points with wins and losses-->
+<div class="panel panel-default" style="width: 500px;">
+  <div class="panel-body">
+		<h2>Number to match: 
+			<p class="number"> </p>
+		</h2>
+		<h2 class="wins"></h2>
+		<h2 class="losses"></h2>
+	</div>
+</div>
+
+<!-- Scores -->
+<div class="panel panel-default" style="width: 500px;">
+	<div class="panel-body">
+		<h2> Your total score is: </h2>
+		<h2 class="score">0</h2>
+	</div>
+</div>
+
+<!-- <div class="row" style="width: 900px;">
+	<div class="col-xs-6 col-md-3 crystal1">
+		<a href="#" class="thumbnail">
+			<img src="assets/images/asset1.png" alt="">
+		</a>
+	</div>
+	<div class="col-xs-6 col-md-3 crystal2" >
+		<a href="#" class="thumbnail">
+			<img src="assets/images/asset2.png" alt="">
+		</a>
+	</div>
+	<div class="col-xs-6 col-md-3">
+		<a href="#" class="thumbnail crystal3">
+			<img src="assets/images/asset3.png" alt="">
+		</a>
+	</div>
+	<div class="col-xs-6 col-md-3">
+		<a href="#" class="thumbnail crystal4">
+			<img src="assets/images/asset4.png" alt="">
+		</a>
+	</div>
+</div> -->
+
+<div class="panel panel-default" style="width: 500px; float: left;">
+  <div class="panel-body">
+			<img class="crystal1" src="assets/images/asset1.png">
+			<img class="crystal2" src="assets/images/asset2.png">
+			<img class="crystal3" src="assets/images/asset3.png">
+			<img class="crystal4" src="assets/images/asset4.png">
+	</div>
+</div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script> <!--My JavaScript-->
+</body>
+</html>
